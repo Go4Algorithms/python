@@ -13,6 +13,7 @@
 # with the given length
 
 from random import randint
+import sys
 
 def best_case(size):
     f = open('best_case.txt', 'w')
@@ -43,4 +44,6 @@ def gen(size):
 
 
 if __name__ == "__main__":
-    gen(1000)
+    arg = int(sys.argv[1])
+    gen(arg)
+    
